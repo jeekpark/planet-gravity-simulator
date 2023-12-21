@@ -16,7 +16,9 @@ OBJ_DIR				=	./obj
 
 CLANGD_GEN		=	./clangd_gen.sh
 
-SRC_FILES			=	$(SRC_DIR)/main.cpp
+SRC_FILES			=	$(SRC_DIR)/main.cpp												\
+								$(PGS_DIR)/World/World.cpp								\
+								$(PGS_DIR)/World/Planet.cpp
 
 OBJ_FILES			=	$(SRC_FILES:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 
